@@ -1,0 +1,68 @@
+.delete-form{
+    margin-right: -200px;
+
+}
+.list-group-item.list-group-item-success{
+    display: flex;
+}
+.list-item-title{
+    flex-grow: 1;
+}
+.form-check-input.me-1{
+    background-color: ;
+}
+#title{
+    align-self: center;
+}
+.aliniere {
+    text-align: center; 
+    margin: 0 auto; 
+    width: 500px;
+    margin-top: 1rem;
+}
+.list-group-success {
+    
+    color: #155724; 
+    padding: 10px; 
+    margin-bottom: 5px; 
+}
+.list-group-success.input{
+    background-color: #c3e6cb;
+    
+    border: none; 
+    padding: 5px 10px; 
+    margin-left: 5px; 
+    border-radius: 4px;
+}
+
+.list-group-success input[type="text"] {
+   
+    border: 1px solid #c3e6cb; 
+    padding: 5px; 
+    border-radius: 10px; 
+    
+}
+
+.list-group-success button {
+    
+    background-color: #28a745; 
+    color: #fff; 
+    border: none; 
+    padding: 5px 10px; 
+    margin-left: 5px; 
+    border-radius: 4px;
+}
+
+.list-group-item-success input[type="checkbox"]:checked + .list-item-title {
+    text-decoration: line-through; 
+}
+body{
+    background-color: #7bb086 !important;
+}
+input[type="checkbox"]:checked {
+    background-color: green; /* Schimbă culoarea de fundal la verde */
+    border: 2px solid darkgreen; /* Schimbă culoarea border-ului la verde întunecat */
+}
+.navbar.navbar-expand-lg.bg-body-tertiary.culoare{
+    background-color:#7bb086 !important;
+}

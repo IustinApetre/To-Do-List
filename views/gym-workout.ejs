@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  href="/styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0 ">
+    <%- include ('partials/header.ejs') %>
+        <h1 id="title">Today's workout</h1>
+        <form action="/addGym" method="POST" class="aliniere">
+            <input type="text" name="gym" placeholder="Add a new task" required class=" list-group-success input">
+            <button type="submit" class="btn btn-outline-success">Add</button>
+        </form>
+        <ul class="list-group list-group-success aliniere" >
+            <% gym.forEach((gymItem, index1)=> { %>
+                <li class="list-group-item list-group-item-success ">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                   <div class="list-item-title"><%= gymItem%></div> 
+                        
+                        <form action="/deleteGym" method="POST" style="display:inline;" id="buton" >
+                            <input type="hidden" name="index1" value="<%= index1 %>">
+                            <button type="submit" class="btn btn-outline-success ">Delete</button>
+                        </form>
+                </li>
+                <% }); %>
+        </ul>
+        <%- include('partials/footer') %>
+</body>
+
+</html>
